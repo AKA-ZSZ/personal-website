@@ -1,0 +1,29 @@
+.navbar {
+  &-container {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      min-width: 180px;
+      height: 100vh;
+    }
+  }
+
+  &-brand {
+    @media screen and (min-width: 768px) {
+      position: absolute;
+      top: 13px;
+    }
+  }
+
+  &-nav {
+    list-style-type: none;
+    padding: 0;
+
+    &-item {
+      margin: 12px 0;
+    }
+
+    &-link {
+    }
+  }
+}

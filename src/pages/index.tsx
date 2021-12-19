@@ -1,13 +1,21 @@
 import React from "react";
 import AboutMe from "../components/aboutMe";
+import Intro from "../components/intro";
 
-import Layout from "../components/layout";
+import Layout from "../components/layout/layout";
+import TechStack from "../components/techStack";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import "./index.scss";
 
 export default function Home() {
   return (
     <Layout>
-      <h1>I’m in a layout!</h1>
-      <AboutMe />
+      <div id="home">
+        <Intro />
+        <AboutMe />
+        <TechStack />
+      </div>
     </Layout>
   );
 }
