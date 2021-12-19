@@ -51,7 +51,7 @@ import "./navbarComponent.scss";
 export default function NavbarComponent() {
   const isMobile = useMobile();
   return (
-    <Navbar bg="light" expand="md" className="navbar">
+    <Navbar expand="md" className="navbar">
       <Container className="navbar-container">
         <Navbar.Brand
           href="#home"

@@ -1,6 +1,6 @@
 import React from "react";
 import AboutMe from "../components/aboutMe";
-import Intro from "../components/intro";
+import Intro from "../components/intro/intro";
 
 import Layout from "../components/layout/layout";
 import TechStack from "../components/techStack";

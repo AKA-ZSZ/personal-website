@@ -1,6 +1,7 @@
 .navbar {
   &-container {
     @media screen and (min-width: 768px) {
+      border-right: 1px solid;
       display: flex;
       flex-direction: column;
       min-width: 180px;
