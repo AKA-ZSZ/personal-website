@@ -5,8 +5,8 @@ import "./techStack.scss";
 export default function TechStack() {
   return (
     <div id="techStack">
-      <h2>Tech stack</h2>
-      <div className="techStack-container">
+      <div className="container techStack-container">
+        <h2>Tech stack</h2>
         <div className="techStack-icons">
           <div className="techStack-icon">
             <a
@@ -132,7 +132,7 @@ export default function TechStack() {
               title="Flask"
               target="_blank"
             >
-              <img src="https://img.icons8.com/color/96/000000/flask.png" />
+              <img src="https://img.icons8.com/ios/100/000000/flask.png" />
             </a>
             Flask
             {/* <a href="https://icons8.com/icon/TtXEs5SeYLG8/flask">Flask icon by Icons8</a> */}

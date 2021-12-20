@@ -1,3 +1,4 @@
+@import "../../pages/variables.scss";
 .button {
   &-primary {
     width: 150px;
@@ -5,7 +6,7 @@
     display: block;
     z-index: 10;
     padding: 5px;
-    border: greenyellow 3px solid;
+    border: $button-color 3px solid;
   }
 }
 
@@ -22,7 +23,7 @@
     top: 0;
     width: 0;
     height: 100%;
-    background: red;
+    background: $button-color;
     opacity: 0;
   }
   &-primary:hover::after {

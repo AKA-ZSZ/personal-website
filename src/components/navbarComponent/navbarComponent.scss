@@ -1,7 +1,7 @@
 .navbar {
   &-container {
     @media screen and (min-width: 768px) {
-      border-right: 1px solid;
+      border-right: 3px solid;
       display: flex;
       flex-direction: column;
       min-width: 180px;
@@ -13,18 +13,6 @@
     @media screen and (min-width: 768px) {
       position: absolute;
       top: 13px;
-    }
-  }
-
-  &-nav {
-    list-style-type: none;
-    padding: 0;
-
-    &-item {
-      margin: 12px 0;
-    }
-
-    &-link {
     }
   }
 }

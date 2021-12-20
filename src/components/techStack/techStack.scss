@@ -1,5 +1,5 @@
 #techStack {
-  border-bottom: 1px solid;
+  border-bottom: 3px solid;
 
   img {
     width: 50px;
@@ -10,12 +10,13 @@
 .techStack {
   &-container {
     display: flex;
+    flex-direction: column;
     width: auto;
     justify-content: center;
   }
   &-icons {
     display: flex;
-    width: 500px;
+    width: inherit;
     justify-content: center;
 
     flex-wrap: wrap;
