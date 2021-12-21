@@ -4,6 +4,7 @@ import Intro from "../components/intro/intro";
 
 import Layout from "../components/layout/layout";
 import TechStack from "../components/techStack/techStack";
+import Projects from "../components/projects/projects";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./index.scss";
@@ -15,6 +16,7 @@ export default function Home() {
         <Intro />
         <AboutMe />
         <TechStack />
+        <Projects />
       </div>
     </Layout>
   );

@@ -25,5 +25,13 @@ module.exports = {
       },
       __key: "pages",
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "MDX",
+        path: "./src/MDX/",
+      },
+      __key: "MDX",
+    },
   ],
 };

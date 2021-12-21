@@ -1,0 +1,27 @@
+.modal-body {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-button {
+  width: 150px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+
+  margin: 30px;
+
+  @media screen and (max-width: 768px) {
+    width: 250px;
+    height: 70px;
+  }
+
+  img {
+    min-width: 150px;
+    min-height: 150px;
+
+    border-radius: inherit;
+  }
+}
