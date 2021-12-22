@@ -1,17 +1,22 @@
 @import "../variables.scss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 
 body {
   height: 100vh;
   position: relative;
   z-index: -1;
   background-color: $background-color;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
   max-width: 850px;
-  padding: 10px;
+  padding: 40px;
   border-color: $border-color;
   color: $font-color-inactive;
+  @media screen and (max-width: 767px) {
+    align-items: center;
+  }
 }
 
 #home {
@@ -19,6 +24,10 @@ body {
   flex-direction: column;
   flex-basis: 100%;
   height: calc(100vh - 56px);
+}
+
+.highlight {
+  color: $font-color-active;
 }
 
 // Override react-bootstrap CSS.

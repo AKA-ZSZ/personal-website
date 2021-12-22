@@ -6,8 +6,10 @@ export default function TechStack() {
   return (
     <div id="techStack">
       <div className="container techStack-container">
-        <h2>Tech stack</h2>
-        <div className="techStack-icons">
+        <h2>
+          <span className="highlight">TECH STACK</span>
+        </h2>
+        <div className="container techStack-icons">
           <div className="techStack-icon">
             <a
               href="https://www.w3.org/TR/html5/"

@@ -1,29 +1,8 @@
 .projects {
   &-container {
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     flex-grow: 1;
-
-    @media screen and (max-width: 768px) {
-      h1 {
-        font-size: 1.75rem;
-      }
-    }
-
-    &-main {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      flex-grow: 1;
-
-      &-projectList {
-        display: flex;
-        justify-content: center;
-
-        @media screen and (max-width: 768px) {
-          margin: 50px;
-          width: min-content;
-        }
-      }
-    }
   }
 }

@@ -50,9 +50,9 @@ function MyVerticallyCenteredModal({
 
 function SingleProject({ project }) {
   const [modalShow, setModalShow] = useState(false);
+
   const image = getImage(project.image);
-  console.error(project.title);
-  console.error("image=>", project.image);
+
   return (
     <>
       {modalButton(() => setModalShow(true), image, project.title)}
@@ -62,7 +62,16 @@ function SingleProject({ project }) {
         description={project.description}
         image={image}
         show={modalShow}
-        onHide={() => setModalShow(false)}
+        onHide={() => {
+          // Prevent scrolling to top when opening a modal.
+          window.onscroll = function () {
+            const x = window.scrollX;
+            const y = window.scrollY;
+            window.scrollTo(x, y);
+          };
+
+          setModalShow(false);
+        }}
       />
     </>
   );

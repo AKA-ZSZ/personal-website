@@ -4,9 +4,11 @@ import ProjectList from "../projectList/projectList";
 import "./projects.scss";
 const Project = () => {
   return (
-    <div className="container projects-container">
-      <div className="projects-container-main">
-        <h1>Projects</h1>
+    <div id="projects">
+      <div className="container projects-container">
+        <h2>
+          <span className="highlight">PROJECTS</span>
+        </h2>
 
         <ProjectList />
       </div>
