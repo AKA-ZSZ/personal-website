@@ -1,4 +1,4 @@
-@import "../../variables.scss";
+@import "../../pages/index.scss";
 .button {
   &-primary {
     width: 150px;
@@ -7,6 +7,11 @@
     z-index: 10;
     padding: 5px;
     border: $button-color 3px solid;
+    background-color: transparent;
+    color: $button-color;
+    &:hover {
+      color: $button-color-hover;
+    }
   }
 }
 
@@ -24,6 +29,7 @@
     width: 0;
     height: 100%;
     background: $button-color;
+
     opacity: 0;
   }
   &-primary:hover::after {

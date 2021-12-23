@@ -8,6 +8,7 @@ import Projects from "../components/projects/projects";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import "./index.scss";
+import Contact from "../components/contact/contact";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <AboutMe />
         <TechStack />
         <Projects />
+        <Contact />
       </div>
     </Layout>
   );

@@ -34,6 +34,9 @@ export default function NavbarComponent() {
             <Nav.Link href="#projects" onClick={updateCurrentState}>
               Projects
             </Nav.Link>
+            <Nav.Link href="#contact" onClick={updateCurrentState}>
+              Contact
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>

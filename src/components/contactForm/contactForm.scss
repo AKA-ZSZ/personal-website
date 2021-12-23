@@ -1,0 +1,17 @@
+.contactForm {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    .form-control {
+      margin-bottom: 15px;
+    }
+
+    .button-container {
+      width: auto;
+    }
+    .button-primary {
+      width: 100%;
+    }
+  }
+}
