@@ -19,6 +19,7 @@ function MyVerticallyCenteredModal({
   title,
   description,
   image,
+  url,
   show,
   onHide,
 }) {
@@ -34,7 +35,7 @@ function MyVerticallyCenteredModal({
         <Modal.Title id="contained-modal-title-vcenter">{title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <a href="#" target="_blank" rel="noreferrer">
+        <a href={url} target="_blank" rel="noreferrer">
           <GatsbyImage image={image} alt={title} />
         </a>
       </Modal.Body>
@@ -61,6 +62,7 @@ function SingleProject({ project }) {
         title={project.title}
         description={project.description}
         image={image}
+        url={project.url}
         show={modalShow}
         onHide={() => {
           // Prevent scrolling to top when opening a modal.

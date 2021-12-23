@@ -1,7 +1,9 @@
+@import "../../pages/index.scss";
 .projectList {
   &-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    border: 1px solid $section-border-color;
   }
 }
