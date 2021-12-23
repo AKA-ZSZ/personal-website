@@ -3,6 +3,7 @@ import { Button, Modal } from "react-bootstrap";
 import "./singleProject.scss";
 import { motion } from "framer-motion";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import PrimaryButton from "../buttons/primaryButton";
 
 const modalButton = (handleClick, previewImg, alt) => (
   <motion.div
@@ -31,7 +32,7 @@ function MyVerticallyCenteredModal({
       centered
       size="xl"
     >
-      <Modal.Header closeButton>
+      <Modal.Header closeButton closeVariant={"white"}>
         <Modal.Title id="contained-modal-title-vcenter">{title}</Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -43,7 +44,8 @@ function MyVerticallyCenteredModal({
         <p>{description}</p>
       </Modal.Body>
       <Modal.Footer>
-        <Button onClick={onHide}>Close</Button>
+        {/* <Button onClick={onHide}>Close</Button> */}
+        <PrimaryButton onClick={onHide}>Close</PrimaryButton>
       </Modal.Footer>
     </Modal>
   );
