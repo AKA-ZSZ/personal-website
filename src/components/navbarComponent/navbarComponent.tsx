@@ -7,12 +7,15 @@ import "./navbarComponent.scss";
 export default function NavbarComponent() {
   const isMobile = useMobile();
   const [isDefault, setIsDefault] = useState(true); // Tells if the page is re-rendered
+  const isBrowser = typeof window !== "undefined";
 
   const updateCurrentState = () => {
     setIsDefault(false);
 
     // Enable normal scrolling when all modals closed and the user clicked any of the nav buttons
-    window.onscroll = null;
+    if (isBrowser) {
+      window.onscroll = null;
+    }
   };
   return (
     <Navbar expand="md" className="navbar">
