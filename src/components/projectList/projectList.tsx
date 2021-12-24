@@ -30,6 +30,7 @@ const ProjectList = () => {
         image: node.frontmatter.project_image,
         url: node.frontmatter.project_url,
       };
+      console.error(project);
       return <SingleProject project={project} />;
     });
   };

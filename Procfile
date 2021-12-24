@@ -1,1 +1,0 @@
-web: yarn heroku-postbuild -- --port ${PORT?}
