@@ -10,7 +10,7 @@
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
-    "heroku-postbuild": "gatsby build",
+    "heroku-postbuild": "NODE_OPTIONS=--max-old-space-size=460 gatsby build",
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
