@@ -80,3 +80,8 @@ body {
 .modal-footer {
   border-top: 1px solid $section-border-color;
 }
+
+.toast-container {
+  position: absolute;
+  align-self: center;
+}

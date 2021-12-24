@@ -4,6 +4,7 @@ import { Form, Toast, ToastContainer } from "react-bootstrap";
 import PrimaryButton from "../buttons/primaryButton";
 import "./contactForm.scss";
 import { useState } from "react";
+import useMobile from "../../hooks/useMobile";
 
 init(process.env.GATSBY_USER_ID);
 
@@ -11,6 +12,7 @@ export const ContactForm = () => {
   const form = useRef();
   const [showResultToast, setShowResultToast] = useState(false);
   const [isResultSuccess, setIsResultSuccess] = useState(false);
+  const isMobile = useMobile();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -40,7 +42,7 @@ export const ContactForm = () => {
 
   const resultToast = () => {
     return (
-      <ToastContainer position="middle-center">
+      <ToastContainer style={{ top: isMobile ? 0 : window.scrollY }}>
         <Toast
           onClose={() => setShowResultToast(false)}
           show={showResultToast}
