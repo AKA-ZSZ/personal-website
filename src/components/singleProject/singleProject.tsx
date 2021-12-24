@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, Modal } from "react-bootstrap";
+import { Modal } from "react-bootstrap";
 import "./singleProject.scss";
 import { motion } from "framer-motion";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
@@ -44,7 +44,6 @@ function MyVerticallyCenteredModal({
         <p>{description}</p>
       </Modal.Body>
       <Modal.Footer>
-        {/* <Button onClick={onHide}>Close</Button> */}
         <PrimaryButton onClick={onHide}>Close</PrimaryButton>
       </Modal.Footer>
     </Modal>
