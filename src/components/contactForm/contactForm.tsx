@@ -13,6 +13,7 @@ export const ContactForm = () => {
   const [showResultToast, setShowResultToast] = useState(false);
   const [isResultSuccess, setIsResultSuccess] = useState(false);
   const isMobile = useMobile();
+  const isBrowser = typeof window !== "undefined";
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -42,7 +43,9 @@ export const ContactForm = () => {
 
   const resultToast = () => {
     return (
-      <ToastContainer style={{ top: isMobile ? 0 : window.scrollY }}>
+      <ToastContainer
+        style={{ top: isMobile || !isBrowser ? 0 : window.scrollY }}
+      >
         <Toast
           onClose={() => setShowResultToast(false)}
           show={showResultToast}
