@@ -4,7 +4,7 @@ import { Form, Toast, ToastContainer } from "react-bootstrap";
 import PrimaryButton from "../buttons/primaryButton";
 import "./contactForm.scss";
 import { useState } from "react";
-import useMobile from "../../hooks/useMobile";
+import { useMobile } from "../../hooks/useMobile";
 
 init(process.env.GATSBY_USER_ID);
 

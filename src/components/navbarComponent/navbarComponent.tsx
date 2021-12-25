@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Nav, Navbar, Container } from "react-bootstrap";
-import useMobile from "../../hooks/useMobile";
+import { useMobile } from "../../hooks/useMobile";
 import NavbarFooter from "../navbarFooter/navbarFooter";
 import "./navbarComponent.scss";
 
@@ -20,10 +20,7 @@ export default function NavbarComponent() {
   return (
     <Navbar expand="md" className="navbar">
       <Container className="navbar-container">
-        <Navbar.Brand
-          href="#home"
-          className={`navbar-brand ${isMobile ? "" : "mx-auto"}`}
-        >
+        <Navbar.Brand href="#home" className="navbar-brand">
           Zhentian
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -41,6 +38,7 @@ export default function NavbarComponent() {
             <Nav.Link href="#contact" onClick={updateCurrentState}>
               Contact
             </Nav.Link>
+
             {isMobile ? <NavbarFooter /> : null}
           </Nav>
         </Navbar.Collapse>
