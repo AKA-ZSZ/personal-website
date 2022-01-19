@@ -9,13 +9,6 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-// Prevent automatically scrolling to top in the background when opening a modal.
-body.modal-open {
-  position: static !important;
-  overflow: visible;
-  padding: 0 !important;
-}
-
 .container {
   max-width: 850px;
   padding: 40px;
