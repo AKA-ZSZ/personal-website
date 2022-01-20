@@ -54,7 +54,7 @@ function SingleProject({ project }) {
   const [modalShow, setModalShow] = useState(false);
 
   const image = getImage(project.image);
-  const isBrowser = typeof window !== "undefined";
+  // const isBrowser = typeof window !== "undefined";
 
   return (
     <>
@@ -67,15 +67,6 @@ function SingleProject({ project }) {
         url={project.url}
         show={modalShow}
         onHide={() => {
-          // Prevent scrolling to top when opening a modal.
-          if (isBrowser) {
-            window.onscroll = function () {
-              const x = window.scrollX;
-              const y = window.scrollY;
-              window.scrollTo(x, y);
-            };
-          }
-
           setModalShow(false);
         }}
       />
