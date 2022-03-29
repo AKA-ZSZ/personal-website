@@ -28,7 +28,7 @@ gatsby develop
 #### If you want to host your website
 #### For test purpose
 ```
-gatsby develop
+gatsby build
 ```
 AND choose a web-hosting service provider e.g Netlify
 
