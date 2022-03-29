@@ -5,7 +5,7 @@ Personal website template<br />
 
 ## Description
 
-A modularized personal website template allowing customization and easy debugging
+A modularized personal website template allowing customization and easy debugging<br /> 
 Tech stack: React, Gatsby.js, GraphQL, Typescript
 
 ## Getting Started
@@ -26,7 +26,7 @@ npm install
 gatsby develop
 ```
 
-#### If you want to host your website
+### If you want to host your website
 #### For test purpose
 ```
 gatsby build
