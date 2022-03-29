@@ -4,28 +4,33 @@ Personal website template
 
 ## Description
 
-A personal website template allowing customization 
+A modularized personal website template allowing customization and easy debugging
 Tech stack: React, Gatsby.js, GraphQL, Typescript
 
 ## Getting Started
 
-### Dependencies
+### Installing Dependencies
 
-* Describe any prerequisites, libraries, OS version, etc., needed before installing program.
-* ex. Windows 10
-
-### Installing
-
-* How/where to download your program
-* Any modifications needed to be made to files/folders
-
-### Executing program
-
-* How to run the program
-* Step-by-step bullets
 ```
-code blocks for commands
+yarn install
 ```
+OR
+```
+npm install
+```
+
+### Set up on localhost
+#### For test purpose
+```
+gatsby develop
+```
+
+#### If you want to host your website
+#### For test purpose
+```
+gatsby develop
+```
+AND choose a web-hosting service provider e.g Netlify
 
 ## Authors
 
