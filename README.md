@@ -27,7 +27,7 @@ gatsby develop
 ```
 
 ### If you want to host your website
-#### For test purpose
+
 ```
 gatsby build
 ```
