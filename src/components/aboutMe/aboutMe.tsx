@@ -19,9 +19,11 @@ export default function AboutMe() {
           </h2>
 
           <p>
-            People usually call me Steven here. As a Co-op student in British
-            Columbia Institute of Technology, I am specialized in web
-            development and completed a 8-month internship in 2021.
+            I'm interested in web development and DevOps. As a Co-op student in
+            British Columbia Institute of Technology, I completed a 8-month
+            internship in 2021. Programming is not just a job for me but more
+            like a lifestyle. I also like travelling, hiking, gaming and
+            swimming.
           </p>
         </div>
       </div>
