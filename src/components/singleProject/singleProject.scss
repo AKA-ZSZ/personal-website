@@ -20,12 +20,16 @@
   // For mobile screen
   -webkit-border-radius: 10px;
   -webkit-transform: translateZ(0);
-  // -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
 
   overflow: hidden;
   display: flex;
   align-items: center;
   margin: 30px;
+
+  &:hover {
+    transform: scale(1.2);
+    transition: all 0.2s ease-in-out;
+  }
 
   @media screen and (min-width: 768px) {
     width: 150px;
