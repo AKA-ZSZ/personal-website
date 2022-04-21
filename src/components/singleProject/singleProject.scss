@@ -16,10 +16,15 @@
   width: auto;
   height: 90px;
   border-radius: 10px;
+
+  // For mobile screen
+  -webkit-border-radius: 10px;
+  -webkit-transform: translateZ(0);
+  // -webkit-mask-image: -webkit-radial-gradient(circle, white, black);
+
   overflow: hidden;
   display: flex;
   align-items: center;
-
   margin: 30px;
 
   @media screen and (min-width: 768px) {
