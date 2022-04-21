@@ -1,19 +1,13 @@
 import React, { useState } from "react";
 import { Modal } from "react-bootstrap";
 import "./singleProject.scss";
-import { motion } from "framer-motion";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import PrimaryButton from "../buttons/primaryButton";
 
 const modalButton = (handleClick, previewImg, alt) => (
-  <motion.div
-    className="modal-button"
-    whileHover={{ scale: 1.2 }}
-    whileTap={{ scale: 0.9 }}
-    onClick={handleClick}
-  >
+  <div className="modal-button" onClick={handleClick}>
     <GatsbyImage image={previewImg} alt={alt} />
-  </motion.div>
+  </div>
 );
 
 function MyVerticallyCenteredModal({
