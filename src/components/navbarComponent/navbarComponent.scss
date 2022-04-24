@@ -1,4 +1,8 @@
 @import "../../pages/index.scss";
+* {
+  scroll-behavior: smooth;
+}
+
 .navbar {
   &-container {
     @media screen and (min-width: 768px) {

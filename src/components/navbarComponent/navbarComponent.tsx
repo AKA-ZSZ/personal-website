@@ -7,7 +7,7 @@ import "./navbarComponent.scss";
 export default function NavbarComponent() {
   const isMobile = useMobile();
   const [isDefault, setIsDefault] = useState(true); // Tells if the page is re-rendered
-  const isBrowser = typeof window !== "undefined";
+  const isBrowser = typeof window !== "undefined"; // whether code is running in a typical browser environment
 
   const updateCurrentState = () => {
     setIsDefault(false);
