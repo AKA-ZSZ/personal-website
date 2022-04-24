@@ -48,7 +48,6 @@ function SingleProject({ project }) {
   const [modalShow, setModalShow] = useState(false);
 
   const image = getImage(project.image);
-  // const isBrowser = typeof window !== "undefined";
 
   return (
     <>
