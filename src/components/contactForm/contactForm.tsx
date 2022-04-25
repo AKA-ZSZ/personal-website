@@ -29,6 +29,7 @@ export const ContactForm = () => {
         (result) => {
           // success
           console.log(result.text);
+          e.target.reset(); // reset form after successfully sending the email
           setShowResultToast(true);
           setIsResultSuccess(true);
         },
