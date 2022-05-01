@@ -3,15 +3,21 @@ import emailjs, { init } from "emailjs-com";
 import { Form, Toast, ToastContainer } from "react-bootstrap";
 import PrimaryButton from "../buttons/primaryButton";
 import "./contactForm.scss";
-import { useState } from "react";
+import { useState, useReducer } from "react";
 import { useMobile } from "../../hooks/useMobile";
+import { toastReducer } from "../../reducers/toastReducer";
 
 init(process.env.GATSBY_USER_ID);
 
 export const ContactForm = () => {
   const form = useRef();
-  const [showResultToast, setShowResultToast] = useState(false);
-  const [isResultSuccess, setIsResultSuccess] = useState(false);
+  // const [showResultToast, setShowResultToast] = useState(false);
+  // const [isResultSuccess, setIsResultSuccess] = useState(false);
+
+  const [toast, dispatchToast] = useReducer(toastReducer, {
+    showResultToast: false,
+    isResultSuccess: false,
+  });
   const isMobile = useMobile();
   const isBrowser = typeof window !== "undefined";
 
@@ -30,14 +36,16 @@ export const ContactForm = () => {
           // success
           console.log(result.text);
           e.target.reset(); // reset form after successfully sending the email
-          setShowResultToast(true);
-          setIsResultSuccess(true);
+          // setShowResultToast(true);
+          // setIsResultSuccess(true);
+          dispatchToast({ type: "TOAST_SUCCESS" });
         },
         (error) => {
           // error
           console.log(error.text);
-          setShowResultToast(true);
-          setIsResultSuccess(false);
+          // setShowResultToast(true);
+          // setIsResultSuccess(false);
+          dispatchToast({ type: "TOAST_ERROR" });
         }
       );
   };
@@ -48,14 +56,16 @@ export const ContactForm = () => {
         style={{ top: isMobile || !isBrowser ? 0 : window.scrollY }}
       >
         <Toast
-          onClose={() => setShowResultToast(false)}
-          show={showResultToast}
+          onClose={() => dispatchToast({ type: "TOAST_CLOSE" })}
+          // show={showResultToast}
+          show={toast.showResultToast}
           delay={3000}
           autohide
-          bg={isResultSuccess ? "success" : "Danger"}
+          // bg={isResultSuccess ? "success" : "Danger"}
+          bg={toast.isResultSuccess ? "success" : "Danger"}
         >
           <Toast.Body>
-            {isResultSuccess
+            {toast.isResultSuccess
               ? `Woohoo, You message has been sent to Zhentian!`
               : "Sorry, something went wrong. Please Try again!"}
           </Toast.Body>
