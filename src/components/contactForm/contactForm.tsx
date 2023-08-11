@@ -57,7 +57,6 @@ export const ContactForm = () => {
       >
         <Toast
           onClose={() => dispatchToast({ type: "TOAST_CLOSE" })}
-          // show={showResultToast}
           show={toast.showResultToast}
           delay={3000}
           autohide
